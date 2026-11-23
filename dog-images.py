@@ -10,7 +10,7 @@ advanced cs folder before starting!
 import requests
 
 # ======================================================================
-# MODEL 1 -- Making a request                          (about 10 min)
+# MODEL 1 -- Making a request                          
 #
 # An API (application programming interface) lets one program ask another
 # program, usually running on a server somewhere else, for data. The Dog
@@ -58,9 +58,9 @@ def part_a():
 #
 
 # ======================================================================
-# MODEL 2 -- Breeds and building URLs                  (about 10 min)
+# MODEL 2 -- Breeds and building URLs                  
 #
-# As we saw yesterday, the Dog API can also give us a list of all breeds. 
+# As we saw yesterday, the Dog API can give us a list of all breeds. 
 # It can also return a random picture of a specific breed. To ask for 
 # a specific breed, we build the URL with an f-string.
 #
@@ -113,7 +113,7 @@ def is_valid_breed(breed):
 
 
 # ======================================================================
-# MODEL 3 -- Saving an image                           (about 15 min)
+# MODEL 3 -- Saving an image                           
 #
 # The picture itself is not JSON. When we request an image URL, the
 # server sends back the raw data of the image file, which Python stores
@@ -184,7 +184,7 @@ def part_e():
         outfile.write(response.content)
 
 # Q12. Call part_e(). What type of error occurred? Explain why it happened.
-#      Then look at the image in Finder: how big is broken.jpg?)
+#      Then look at the image in Finder: how big is broken.jpg?
 #
 #
 #
@@ -223,7 +223,7 @@ def save_random_dog(breed):
 
 
 # ======================================================================
-# MODEL 4 -- Several pictures at once                  (about 10 min)
+# MODEL 4 -- Several pictures at once                  
 #
 # The Dog API can return several random pictures of a breed in a single
 # request by adding a number to the end of the URL.
@@ -238,7 +238,7 @@ def get_image_urls(breed, count):
     return data["message"]
 
 def part_g():
-    # --- Part g: three husky pictures ---
+    # --- Part G: three husky pictures ---
     print("===== PART G =====")
     urls = get_image_urls("husky", 3)
     print("type(urls):", type(urls))
@@ -265,20 +265,13 @@ def save_many(breed, count):
 #
 #
 
-# Q17. Write the steps, in order, for downloading 3 random images of a husky.
-#
-#
-#
-#
-
-
 # ======================================================================
 # EXTENSIONS 
 # ======================================================================
 
 # EXTENSION 1 -- Handle errors
 #   A program that sends requests over the internet should expect things
-#   to go wrong: a breed may not exist (as in part_d), or the internet
+#   to go wrong: a breed may not exist (as in part_b), or the internet
 #   connection may fail. Write a function named safe_random_image_url
 #   (breed) that:
 #     - returns None (and prints a helpful message) if the status code
