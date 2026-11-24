@@ -38,22 +38,24 @@ def part_a():
 #
 #
 #
+#
 
 # Q2. Compare response.text and data. What is the data type of each? How
 #     do they look different when printed?
 #
 #
-
+#
 
 # Q3. What keys does the dictionary data have? Which key holds the web
 #     address of the dog picture?
 #
 #
-
+#
 
 # Q4. Copy the image URL that was printed and paste it into a web browser.
 #     What do you see? Then call part_a() again. Is the URL the same? Why
 #     do you think that is?
+#
 #
 #
 
@@ -293,6 +295,6 @@ def save_many(breed, count):
 #   ALL the images of a breed. Using these eight breeds:
 #       ["beagle", "boxer", "husky", "pug", "poodle", "akita", "collie",
 #        "labrador"]
-#   build a dictionary that stores the number of images of each breed
-#   (the length of that list). Then create a bar chart with matplotlib.
+#   build a dictionary that stores the number of images of each breed. 
+#   Then create a bar chart with matplotlib.
 #   Which breed has the most pictures?
